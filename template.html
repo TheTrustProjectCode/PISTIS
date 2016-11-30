@@ -1,0 +1,214 @@
+<style>
+    legend {
+        font-size: 36px;
+        margin-bottom: 36px;
+    }
+    
+    legend span {
+        font-size: 12px;
+    }
+    
+    article {
+        width: 976px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        margin-bottom: 36px;
+    }
+    
+    fieldset {
+        border: none;
+    }
+    
+    label {
+        font-size: 24px;
+        color: black;
+        display: inline-block;
+        /*height: 43px;*/
+    }
+    
+    input {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding-bottom: 4px;
+    }
+    
+    input[type=text] {
+        border: none;
+        -webkit-appearance: none;
+        border-bottom: 2px solid #326E28;
+        color: #707070;
+        font-size: 24px;
+        outline: none !important;
+        font-weight: 300;
+    }
+    
+    .short {
+        width: 15px;
+    }
+    
+    .disclose-button {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid black;
+        display: inline-block;
+        margin-left: 25px;
+    }
+    
+    .disclose {
+        display: none;
+    }
+    
+    .disclose label {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    
+    .disclose input {
+        width: 1000px;
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    .section {
+        min-height: 40px;
+        height: auto;
+    }
+    
+    .list label {
+        font-size: 12px;
+    }
+    
+    .list input:after {
+        content: "\br";
+        white-space: pre;
+    }
+    
+    .trust-score {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+    
+    button {
+        margin-top: 40px;
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+</style>
+
+<article class="transparancy">
+    <fieldset>
+        <legend>PISTIS <span>Spirit of Trust & Honesty</span></legend>
+        <div class="section">
+            <label for="site-agency">Agency Source:</label>
+            <input type="text" id="site-agency">
+        </div>
+
+        <div class="section">
+            <label for="other-media">Other Media as a Source:</label>
+            <input type="text" id="other-media">
+        </div>
+
+        <div class="section">
+            <label for="expertise">
+            Author Expertise:
+            </label>
+            <input type="checkbox" id="expertise">
+        </div>
+
+        <div class="section">
+            <label for="images">
+            Pictures and Video:
+            </label>
+            <input type="text" id="images" class="short">
+            <div class="disclose-button" id="images-button"></div>
+            <div class="disclose" id="image-list"></div>
+        </div>
+
+        <div class="section">
+            <label for="on-the-ground">On The Ground Source:</label>
+            <input type="text" id="on-the-ground">
+        </div>
+
+        <div class="section">
+            <label for="data-research">
+            Data and Research:
+            </label>
+            <input type="text" id="data-research">
+        </div>
+
+
+        <div class="section">
+            <label for="original-reporting">
+            Original Reporting:
+            </label>
+            <input type="checkbox" id="data-research">
+        </div>
+
+        <div class="section">
+            <label for="quotes">Quotes (diversity, source):</label>
+            <input type="text" id="quotes">
+        </div>
+
+        <div class="section">
+            <label for="fact-check">
+            Fact Check Done:
+            </label>
+            <input type="checkbox" id="fact-check">
+        </div>
+
+        <div class="section">
+            <label for="documentation">
+                Documentation Available:
+                </label>
+            <input type="text" id="documentation">
+        </div>
+
+        <div class="section">
+            <label for="user-generated">
+            User Generated Content Verified:
+            </label>
+            <input type="checkbox" id="user-generated">
+        </div>
+
+        <div class="section">
+            <label for="sponsored-status">
+            Sponsored Status (Brand and Author):
+            </label>
+            <input type="text" id="sponsored-status">
+        </div>
+
+        <div class="section">
+            <label for="ext-links">
+            External Links:
+            </label>
+            <input type="text" id="ext-links" class="short">
+            <div class="disclose-button" id="ext-links-button"></div>
+            <div class="disclose" id="ext-links-list"></div>
+        </div>
+
+        <div class="section">
+            <label for="int-links">
+              Internal Links:
+            </label>
+            <input type="text" id="int-links" class="short">
+            <div class="disclose-button" id="int-links-button"></div>
+            <div class="disclose" id="int-links-list"></div>
+        </div>
+
+    </fieldset>
+
+    <div class="trust-score">Trust Score: <span id="trust-score"></span>/100</div>
+
+    <button id="submit-trust">Submit</button>
+
+</article>

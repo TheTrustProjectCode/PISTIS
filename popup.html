@@ -1,0 +1,64 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+    <title>Telescope</title>
+    <script src="popup.js"></script>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            background-color: #A91717;
+            font-size: 100%;
+            width: 300px;
+            height: auto;
+            color: white;
+            margin-bottom: 40px;
+            padding-left: 10px;
+        }
+        
+        h1 {
+            font-family: 'gill sans';
+            font-weight: 400;
+            font-size: 23px;
+            color: #7B0310;
+            text-shadow: 0px 1px 0px rgba(255, 179, 188, .5), 0px -1px 0px rgba(78, 2, 10, .5);
+        }
+        
+        div,
+        a {
+            color: #fff;
+            text-decoration: none;
+            outline: none;
+            text-shadow: 0px 1px 0px rgba(84, 74, 74, 1), 0px -1px 0px rgba(133, 6, 0, 1);
+        }
+        
+        h1 {
+            font-size: 30px;
+        }
+        
+        #login,
+        h1 {
+            cursor: pointer;
+        }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+
+
+</head>
+
+<body>
+    <h1>Transparancy</h1>
+</body>
+
+</html>

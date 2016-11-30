@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "permissions": ["cookies", "tabs", "http://*/*", "https://*/*"],
+    "name": "News Telescope",
+    "description": "Chrome plugin for viewing stats of a news story",
+    "version": "1.2",
+    "web_accessible_resources": ["template.html"],
+    "background": {
+        "scripts": ["popup.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    }
+}
